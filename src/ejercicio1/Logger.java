@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Logger {
-	private List<String> mensajes;
-	private static Logger logger;
 	
-	private Logger() {}
+	private static Logger logger;
 	
 	public Logger getLogger() {
 		if(logger == null) {
@@ -15,5 +13,17 @@ public class Logger {
 		}
 		return logger;
 	}
-			
+	
+	private List<String> mensajes = new ArrayList<>();
+
+	
+	private Logger() {}
+	
+	
+	public void registrar(String mensaje) {
+		mensajes.add(mensaje);
+	}
+	public void mostrarLogs() {
+		mensajes.forEach(System.out::println);
+	}
 }
