@@ -6,5 +6,9 @@ public class ServiciosPedidos {
 	public ServiciosPedidos() {
 		logger = logger.getLogger();
 	}
+	public void registrar(String mensaje) {
+		logger.registrar(mensaje);
+	}
+
 
 }

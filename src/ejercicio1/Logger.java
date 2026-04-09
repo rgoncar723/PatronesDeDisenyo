@@ -7,7 +7,7 @@ public class Logger {
 	
 	private static Logger logger;
 	
-	public Logger getLogger() {
+	public static Logger getLogger() {
 		if(logger == null) {
 			logger = new Logger();
 		}

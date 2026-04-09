@@ -6,6 +6,9 @@ public class ServicioUsuarios {
 	public ServicioUsuarios() {
 		logger = logger.getLogger();
 	}
-	
-
+	public void registrar(String mensaje) {
+		logger.registrar(mensaje);
+	}
 }
+
+
