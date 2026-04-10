@@ -3,6 +3,7 @@ package ejercicio2;
 import java.util.Scanner;
 
 public class Main {
+	@SuppressWarnings("resource")
 	public void show() {
 		String mensaje;
 		Scanner kb = new Scanner(System.in);
